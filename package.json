@@ -12,7 +12,8 @@
     },
     "scripts": {
         "watch": "npm run build -- --watch",
-        "test": "jest"
+        "test": "jest",
+        "php:gen": "esbuild ./bin/generate-php-parser.ts --platform=node --format=cjs | node"
     },
     "dependencies": {
         "@prettier/plugin-php": "^0.17.6",
